@@ -1,5 +1,6 @@
 package xyz.geik.farmer.integrations;
 
+import arda.morkoc.api.FoxClaimsProvider;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.event.Listener;
@@ -7,6 +8,8 @@ import xyz.geik.farmer.Main;
 import xyz.geik.farmer.integrations.askyblock.Askyblock;
 import xyz.geik.farmer.integrations.bentobox.Bento;
 import xyz.geik.farmer.integrations.fabledskyblock.FabledSkyblock;
+import xyz.geik.farmer.integrations.foxclaims.FoxClaims;
+import xyz.geik.farmer.integrations.foxclaims.FoxClaimsIntegration;
 import xyz.geik.farmer.integrations.grief.GriefPrevent;
 import xyz.geik.farmer.integrations.iridiumskyblock.IridiumSkyblock;
 import xyz.geik.farmer.integrations.lands.Lands;
@@ -85,6 +88,10 @@ public abstract class Integrations {
                 Main.setIntegration(new UltimateClaims());
             else if (Bukkit.getPluginManager().isPluginEnabled("RClaim")) {
                 Main.setIntegration(new RClaim());
+            }
+            else if (Bukkit.getPluginManager().isPluginEnabled("FoxClaims")) {
+                FoxClaimsIntegration.initialize(Main.getInstance());
+                Main.setIntegration(new FoxClaims());
             }
         }, 1L);
     }

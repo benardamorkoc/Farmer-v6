@@ -17,6 +17,7 @@ import xyz.geik.farmer.database.SQL;
 import xyz.geik.farmer.database.SQLite;
 import xyz.geik.farmer.helpers.*;
 import xyz.geik.farmer.integrations.Integrations;
+import xyz.geik.farmer.integrations.foxclaims.FoxClaimsIntegration;
 import xyz.geik.farmer.listeners.ListenerRegister;
 import xyz.geik.farmer.modules.FarmerModule;
 import xyz.geik.farmer.shades.storage.Config;

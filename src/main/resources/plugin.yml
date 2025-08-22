@@ -3,7 +3,7 @@ author: Geik, WaterArchery, adabugra, Amowny, Dsngxddd
 main: xyz.geik.farmer.Main
 version: v6-b110
 api-version: 1.13
-softdepend: [PlaceholderAPI, Vault, RoyaleEconomy, PlayerPoints, GrinGotts, ElementalGems, ASkyBlock, BentoBox, SuperiorSkyblock2, GriefPrevention, FabledSkyBlock, Lands, IridiumSkyblock, UltimateClaims]
+softdepend: [PlaceholderAPI, Vault, RoyaleEconomy, PlayerPoints, GrinGotts, ElementalGems, ASkyBlock, BentoBox, SuperiorSkyblock2, GriefPrevention, FabledSkyBlock, Lands, IridiumSkyblock, UltimateClaims, FoxClaims]
 loadbefore: [AutoPickup]
 folia-supported: true
 commands:
